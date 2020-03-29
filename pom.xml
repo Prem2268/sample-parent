@@ -12,7 +12,7 @@
 	
 	<groupId>com.sample.parent</groupId>
 	<artifactId>sample-parent</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>parent-version.1</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -59,7 +59,14 @@
 			<artifactId>lombok</artifactId>
 			<version>${lomback-version}</version>
 		</dependency>
-
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
